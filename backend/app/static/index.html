@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Incident AI</title>
+<style>
+  body {
+    font-family: Tahoma, sans-serif;
+    width: 700px;
+    margin: 40px auto;
+    background: #f7f7f9;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-family: Tahoma;
+  }
+
+  button {
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    background: #2d6cdf;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  button:hover {
+    background: #1f56b8;
+  }
+
+  /* ---- استایل کارت تیکت ---- */
+  .ticket {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-right: 6px solid #999;
+  }
+
+  .ticket.priority-low     { border-right-color: #4caf50; }
+  .ticket.priority-medium  { border-right-color: #ff9800; }
+  .ticket.priority-high    { border-right-color: #f44336; }
+  .ticket.priority-critical{ border-right-color: #b71c1c; background:#fff5f5; }
+
+  .ticket h3 {
+    margin-top: 0;
+  }
+
+  .ticket .row {
+    margin-bottom: 10px;
+  }
+
+  .ticket .label {
+    font-weight: bold;
+    color: #555;
+    display: inline-block;
+    min-width: 110px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .badge.low      { background:#4caf50; }
+  .badge.medium   { background:#ff9800; }
+  .badge.high     { background:#f44336; }
+  .badge.critical { background:#b71c1c; }
+
+  .vision-box {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #444;
+  }
+
+  #error-box {
+    background: #ffe0e0;
+    color: #900;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<h2>Incident AI Demo</h2>
+
+<form id="form">
+  <input type="file" id="image" accept="image/*">
+  <input type="text" id="location" placeholder="Location">
+  <input type="text" id="time" placeholder="Event Time">
+  <textarea id="note" placeholder="Description"></textarea>
+  <button>Analyze</button>
+</form>
+
+<h3>نتیجه</h3>
+
+<div id="error-box"></div>
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
