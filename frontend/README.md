@@ -13,17 +13,17 @@ React + Vite frontend for the GeoVision project.
 ### 1. Navigate to frontend
 ```bash
 cd geo-vision-main/frontend
+```
+### 2. Install dependencies
 
-###2. Install dependencies
-
-bash
+```bash
 npm install
-
+```
 ### 3. Run the dev server
 
-bash
+```bash
 npm run dev
-
+```
 - App: `http://localhost:5173`
 
 ## Project Structure
