@@ -26,6 +26,7 @@ npm run dev
 
 - App: `http://localhost:5173`
 ```
+
 ## Project Structure
 
 
