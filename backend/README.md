@@ -1,51 +1,59 @@
-# Geovision
+# GeoVision Backend
 
-# مدل هوش مصنوعی
+FastAPI backend service for the GeoVision project.
 
-مدل هوش مصنوعی وظیفه تحلیل تصاویر، تشخیص رخداد و تعیین سازمان مسئول را بر عهده دارد.
+## Prerequisites
 
-# دامنه عملکرد نسخه نمایشی
+- Python 3.10+
 
-نسخه ارائه‌شده ، نسخه نمایشی دمو سامانه است، مدل هوش مصنوعی فعلی تنها بر روی مجموعه محدودی از داده‌ها آموزش دیده است.
+## Getting Started
 
-:در نسخه فعلی، تنها رخدادهای زیر قابل تشخیص هستن
+### 1. Clone and navigate
+```bash
+git clone https://github.com/<your-username>/geo-vision.git
+cd geo-vision/backend
 
-:شهرداری
- زباله
- نخاله
- چاله خیابانی
- خرابی روشنایی معابر
- مشکلات فضای سبز
+### 2. Create and activate virtual environment
 
-:نهادهای امنیتی
- رخداد امنیتی
- انفجار
- محل اصابت موشک یا بمب
- موارد مشکوک
+bash
+python3 -m venv app/venv
+source app/venv/bin/activate  # Windows: app\venv\Scripts\Activate.ps1
 
-:مخابرات
- قطعی کابل
- خرابی فیبر نوری
- آسیب داکت
- خرابی تجهیزات
+### 3. Install dependencies
 
-:سازمان آب و فاضلاب
- نشت آب
- شکستگی لوله
+bash
+pip install -r requirements.txt
 
-:اداره برق
- تیر برق آسیب‌دیده
- قطعی کابل برق
+### 4. Configure environment variables
 
-:شرکت گاز
- نشت گاز
- آسیب خطوط گاز
+bash
+cp .env.example .env
+# Edit .env with your actual values
 
-این دامنه عملکرد صرفاً مربوط به مدل آموزشی نسخه نمایشی است و محدودیتی در معماری سامانه ایجاد نمی‌کند.
+### 5. Run the server
 
-# نکات مهم
+> ⚠️ Always run from the `backend` directory so Python resolves the `app` package correctly.
 
- این مخزن جهت تحویل نسخه نمایشی پروژه به کارفرما تهیه شده است.
- مدل فعلی صرفاً برای نمایش قابلیت‌های سامانه آموزش داده شده است.
- معماری سیستم مقیاس‌پذیر و قابل توسعه است.
- توسعه نسخه نهایی مطابق نیازهای کارفرما امکان‌پذیر خواهد بود.
+bash
+uvicorn app.main:app --reload
+
+- API: `http://127.0.0.1:8000`
+- Swagger docs: `http://127.0.0.1:8000/docs`
+
+## Project Structure
+
+
+backend/
+├── .env.example
+├── requirements.txt
+└── app/
+├── main.py
+├── api/
+├── clients/
+├── core/
+├── schemas/
+├── services/
+├── static/
+└── utils/
+
+
