@@ -16,7 +16,7 @@ Municipality
 - Street pothole
 - Street lighting malfunction
 - Green space issues
-
+e
 Security agencies
 - Security incident
 - Explosion
@@ -42,6 +42,8 @@ Gas Company
 - Gas line damage
 
 This scope of operation applies only to the training model of the demo version and does not impose any limitation on the system architecture.
+
+testt
 
 
 # Important Notes
