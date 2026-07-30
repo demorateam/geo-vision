@@ -29,7 +29,7 @@ npm run dev
 
 ## Project Structure
 
-
+```
 frontend/
 ├── index.html
 ├── package.json
@@ -59,7 +59,7 @@ frontend/
 │   └── ticketStore.js
 └── styles/
 └── AdminPanel.css
-
+```
 ## Running the Full Project
 
 Both frontend and backend must run simultaneously.
