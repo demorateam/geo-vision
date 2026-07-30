@@ -1,64 +1,52 @@
 # Geovision
 
-# مدل هوش مصنوعی
+# Artificial Intelligence Model
 
-مدل هوش مصنوعی وظیفه تحلیل تصاویر، تشخیص رخداد و تعیین سازمان مسئول را بر عهده دارد.
+The artificial intelligence model is responsible for image analysis, event detection, and determining the responsible organization.
 
-# دامنه عملکرد نسخه نمایشی
+# Scope of the Demo Version
 
-نسخه ارائه‌شده ، نسخه نمایشی دمو سامانه است، مدل هوش مصنوعی فعلی تنها بر روی مجموعه محدودی از داده‌ها آموزش دیده است.
+The version provided is the system’s demo version. The current AI model has only been trained on a limited dataset.
 
-:در نسخه فعلی، تنها رخدادهای زیر قابل تشخیص هستن
+In the current version, only the following events can be detected:
 
+Municipality
+- Waste
+- Debris
+- Street pothole
+- Street lighting malfunction
+- Green space issues
 
-:شهرداری
+Security agencies
+- Security incident
+- Explosion
+- Missile or bomb impact site
+- Suspicious items
 
- زباله
- نخاله
- چاله خیابانی
- خرابی روشنایی معابر
- مشکلات فضای سبز
+Telecommunications
+- Cable outage
+- Fiber optic failure
+- Duct damage
+- Equipment malfunction
 
+Water and Wastewater Organization
+- Water leak
+- Pipe breakage
 
-:نهادهای امنیتی
+Electricity Department
+- Damaged power pole
+- Power cable outage
 
- رخداد امنیتی
- انفجار
- محل اصابت موشک یا بمب
- موارد مشکوک
+Gas Company
+- Gas leak
+- Gas line damage
 
-
-:مخابرات
-
- قطعی کابل
- خرابی فیبر نوری
- آسیب داکت
- خرابی تجهیزات
-
-
-:سازمان آب و فاضلاب
-
- نشت آب
- شکستگی لوله
-
-
-:اداره برق
-
- تیر برق آسیب‌دیده
- قطعی کابل برق
+This scope of operation applies only to the training model of the demo version and does not impose any limitation on the system architecture.
 
 
-:شرکت گاز
+# Important Notes
 
- نشت گاز
- آسیب خطوط گاز
-
-
-این دامنه عملکرد صرفاً مربوط به مدل آموزشی نسخه نمایشی است و محدودیتی در معماری سامانه ایجاد نمی‌کند.
-
-# نکات مهم
-
- این مخزن جهت تحویل نسخه نمایشی پروژه به کارفرما تهیه شده است.
- مدل فعلی صرفاً برای نمایش قابلیت‌های سامانه آموزش داده شده است.
- معماری سیستم مقیاس‌پذیر و قابل توسعه است.
- توسعه نسخه نهایی مطابق نیازهای کارفرما امکان‌پذیر خواهد بود.
+This repository has been prepared for delivering the project’s demo version to the client.
+The current model has been trained solely to demonstrate the system’s capabilities.
+The system architecture is scalable and extensible.
+Development of the final version will be possible according to the client’s requirements.
