@@ -23,9 +23,8 @@ npm install
 
 ```bash
 npm run dev
-
-- App: `http://localhost:5173`
 ```
+- App: `http://localhost:5173`
 
 ## Project Structure
 
