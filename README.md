@@ -1,78 +1,53 @@
-# Geovision
+# GeoVision
 
-# Artificial Intelligence Model
+GeoVision is an AI-powered urban event detection system. It analyzes images submitted by users or field operators, identifies the type of incident, and automatically routes the report to the responsible organization.
 
-The artificial intelligence model is responsible for image analysis, event detection, and determining the responsible organization.
+## Tech Stack
 
-# Scope of the Demo Version
+**Backend**
+- Python, FastAPI
+- OpenAI GPT-4o Mini (×2 API instances) — image analysis & event classification
+- Uvicorn
 
-The version provided is the system’s demo version. The current AI model has only been trained on a limited dataset.
+**Frontend**
+- React + Vite
+- REST API integration with backend
 
-In the current version, only the following events can be detected:
+## System Architecture
 
-Municipality
-- Waste
-- Debris
-- Street pothole
-- Street lighting malfunction
-- Green space issues
+![System Architecture](assets/structure.png)
 
-Security agencies
-- Security incident
-- Explosion
-- Missile or bomb impact site
-- Suspicious items
+---
 
-Telecommunications
-- Cable outage
-- Fiber optic failure
-- Duct damage
-- Equipment malfunction
+## Scope of the Demo Version
 
-Water and Wastewater Organization
-- Water leak
-- Pipe breakage
+The current AI model has been trained on a limited dataset. In this version, the following events are detectable:
 
-Electricity Department
-- Damaged power pole
-- Power cable outage
+**Municipality**
+- Waste, Debris, Street pothole, Street lighting malfunction, Green space issues
 
-Gas Company
-- Gas leak
-- Gas line damage
-e
-Security agencies
-- Security incident
-- Explosion
-- Missile or bomb impact site
-- Suspicious items
+**Security Agencies**
+- Security incident, Explosion, Missile/bomb impact site, Suspicious items
 
-Telecommunications
-- Cable outage
-- Fiber optic failure
-- Duct damage
-- Equipment malfunction
+**Telecommunications**
+- Cable outage, Fiber optic failure, Duct damage, Equipment malfunction
 
-Water and Wastewater Organization
-- Water leak
-- Pipe breakage
+**Water & Wastewater**
+- Water leak, Pipe breakage
 
-Electricity Department
-- Damaged power pole
-- Power cable outage
+**Electricity Department**
+- Damaged power pole, Power cable outage
 
-Gas Company
-- Gas leak
-- Gas line damage
+**Gas Company**
+- Gas leak, Gas line damage
 
-This scope of operation applies only to the training model of the demo version and does not impose any limitation on the system architecture.
+> This scope applies only to the demo training model and does not limit the system architecture.
 
-This scope of operation applies only to the training model of the demo version and does not impose any limitation on the system architecture.
+---
 
+## Important Notes
 
-# Important Notes
-
-This repository has been prepared for delivering the project’s demo version to the client.
-The current model has been trained solely to demonstrate the system’s capabilities.
-The system architecture is scalable and extensible.
-Development of the final version will be possible according to the client’s requirements.
+- This repository contains the demo version delivered to the client.
+- The current model has been trained solely to demonstrate the system's capabilities.
+- The system architecture is scalable and extensible.
+- The final version can be developed according to the client's requirements.
