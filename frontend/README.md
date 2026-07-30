@@ -23,9 +23,9 @@ npm install
 
 ```bash
 npm run dev
-```
-- App: `http://localhost:5173`
 
+- App: `http://localhost:5173`
+```
 ## Project Structure
 
 
@@ -66,15 +66,16 @@ Both frontend and backend must run simultaneously.
 Open two terminals:
 
 **Terminal 1 — Backend:**
-bash
+```bash
 cd geo-vision-main/backend
 source app/venv/bin/activate
 uvicorn app.main:app --reload
-
+```
 **Terminal 2 — Frontend:**
-bash
+```bash
 cd geo-vision-main/frontend
 npm run dev
+```
 
 ## Tech Stack
 
