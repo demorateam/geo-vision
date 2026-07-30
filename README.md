@@ -43,7 +43,6 @@ Gas Company
 
 This scope of operation applies only to the training model of the demo version and does not impose any limitation on the system architecture.
 
-testt
 
 
 # Important Notes
