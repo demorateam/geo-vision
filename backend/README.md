@@ -35,6 +35,7 @@ cp .env.example .env
 > ⚠️ Always run from the `backend` directory so Python resolves the `app` package correctly.
 
 bash
+cd geo-vision/backend
 uvicorn app.main:app --reload
 
 - API: `http://127.0.0.1:8000`
@@ -56,4 +57,9 @@ backend/
 ├── static/
 └── utils/
 
+## Tech Stack
 
+- FastAPI
+- Uvicorn
+- Pydantic
+- python-dotenv
