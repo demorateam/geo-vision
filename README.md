@@ -16,6 +16,30 @@ Municipality
 - Street pothole
 - Street lighting malfunction
 - Green space issues
+
+Security agencies
+- Security incident
+- Explosion
+- Missile or bomb impact site
+- Suspicious items
+
+Telecommunications
+- Cable outage
+- Fiber optic failure
+- Duct damage
+- Equipment malfunction
+
+Water and Wastewater Organization
+- Water leak
+- Pipe breakage
+
+Electricity Department
+- Damaged power pole
+- Power cable outage
+
+Gas Company
+- Gas leak
+- Gas line damage
 e
 Security agencies
 - Security incident
@@ -43,6 +67,7 @@ Gas Company
 
 This scope of operation applies only to the training model of the demo version and does not impose any limitation on the system architecture.
 
+This scope of operation applies only to the training model of the demo version and does not impose any limitation on the system architecture.
 
 
 # Important Notes
