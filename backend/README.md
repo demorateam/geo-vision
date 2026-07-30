@@ -12,38 +12,38 @@ FastAPI backend service for the GeoVision project.
 ```bash
 git clone https://github.com/<your-username>/geo-vision.git
 cd geo-vision/backend
-
+```
 ### 2. Create and activate virtual environment
-
+```
 bash
 python3 -m venv app/venv
 source app/venv/bin/activate  # Windows: app\venv\Scripts\Activate.ps1
-
+```
 ### 3. Install dependencies
-
+```
 bash
 pip install -r requirements.txt
-
+```
 ### 4. Configure environment variables
-
+```
 bash
 cp .env.example .env
 # Edit .env with your actual values
-
+```
 ### 5. Run the server
 
 > ⚠️ Always run from the `backend` directory so Python resolves the `app` package correctly.
-
+```
 bash
 cd geo-vision-main/backend
 uvicorn app.main:app --reload
-
+```
 - API: `http://127.0.0.1:8000`
 - Swagger docs: `http://127.0.0.1:8000/docs`
 
 ## Project Structure
 
-
+```
 backend/
 ├── .env.example
 ├── requirements.txt
@@ -56,7 +56,7 @@ backend/
 ├── services/
 ├── static/
 └── utils/
-
+```
 ## Running the Full Project
 
 Both frontend and backend must run simultaneously.
@@ -64,16 +64,16 @@ Both frontend and backend must run simultaneously.
 Open two terminals:
 
 **Terminal 1 — Backend:**
-bash
+```bash
 cd geo-vision-main/backend
 source app/venv/bin/activate
 uvicorn app.main:app --reload
-
+```
 **Terminal 2 — Frontend:**
-bash
+```bash
 cd geo-vision-main/frontend
 npm run dev
-
+```
 
 ## Tech Stack
 
