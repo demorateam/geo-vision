@@ -35,7 +35,7 @@ cp .env.example .env
 > ⚠️ Always run from the `backend` directory so Python resolves the `app` package correctly.
 
 bash
-cd geo-vision/backend
+cd geo-vision-main/backend
 uvicorn app.main:app --reload
 
 - API: `http://127.0.0.1:8000`
@@ -56,6 +56,24 @@ backend/
 ├── services/
 ├── static/
 └── utils/
+
+## Running the Full Project
+
+Both frontend and backend must run simultaneously.
+
+Open two terminals:
+
+**Terminal 1 — Backend:**
+bash
+cd geo-vision-main/backend
+source app/venv/bin/activate
+uvicorn app.main:app --reload
+
+**Terminal 2 — Frontend:**
+bash
+cd geo-vision-main/frontend
+npm run dev
+
 
 ## Tech Stack
 
